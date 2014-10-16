@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>- Graphic Demo -</name>
+  <namespace>Innovate.Gadgets</namespace>
+  <version>1.0</version>
+  <author name="Rajesh Lal">
+    <logo src="images/logo.png" />
+    <info url="www.innovatewithgadgets.com" />
+  </author>
+  <copyright>Copyright&#169; 2007-2008</copyright>
+  <description>Gadget Protocols Demo Chapter 13</description>
+  <icons>
+    <icon width="70" height="80" src="images/icon.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="gadget.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="images/drag.png"/>
+    </host>
+  </hosts>
+</gadget>

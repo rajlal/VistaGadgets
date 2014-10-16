@@ -1,0 +1,21 @@
+body
+{
+	font-family: Segoe UI, Tahoma, Sans-Serif;
+	margin:0px;
+	padding:0px;
+	width:135px;
+	height:63px;
+}
+#playbackStatus
+{
+	font-size: 12px;
+	font-weight:normal ;
+}
+#nowPlaying
+{
+	font-size: 11px;
+}
+#nowPlayingText
+{
+	font-size:12px;
+}

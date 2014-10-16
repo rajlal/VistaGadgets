@@ -1,0 +1,143 @@
+﻿
+/* CSS Document */
+body {
+	height:  134px;
+	width:  130px;
+	margin:  0px 0px 0px;
+	font-size:  11px;
+	font-family:  Calibri;
+	border: none;
+}
+#blogtitle 
+{
+	font-weight:bold ;  
+	color: silver;
+}
+#content {
+	position:absolute; 
+	left:40px; 
+	top:40px; 
+	height:100px; 
+	z-index:1;
+	font-size:  10px;
+	font-family:  Calibri;
+	color:silver; 
+	overflow: hidden;
+}
+a {
+	border: none;
+}
+
+img {
+	border: none;
+}
+#loading {
+	position:absolute;
+	visibility:visible;
+	text-align:center;
+	z-index:99;
+	width:100%;
+	top:50px;
+	left:6px;
+	margin-left:55px;
+	background: url(../images/loading-16x16.gif) no-repeat;
+	height:19px
+}
+.title {
+	font-family:Calibri,Geneva, Arial, Helvetica, sans-serif;
+	color: silver ;
+	vertical-align:middle;
+	overflow-x: hidden;
+	silver-space: nowrap;
+	text-overflow: ellipsis;
+	font-size:  11px;
+}
+.title:hover {
+	cursor: hand;
+	color:silver ; 
+}
+.arrow {
+	color: silver;
+	cursor: hand;
+	font: verdana;
+	font-size:11px;
+}
+.arrow:hover {
+	color: silver;
+	cursor: hand;
+}
+.arrowl:hover {
+	color: silver;
+	cursor: hand;
+}
+.sub {
+	position:relative;
+	font-size:  10px;
+	font-family:  Calibri;
+	color: silver;  
+	font-weight: normal;
+	cursor: hand;
+}
+.sub:hover {
+	color: silver;
+	cursor: hand;
+} 
+.subtitle:hover {
+	color: silver;
+	cursor: hand;
+} 
+.subtitle {
+	position:relative;
+	font-size:  11px;
+	font-family:  Calibri;
+	color: silver;  
+	font-weight: bold;
+	cursor: hand;
+}
+#logo{
+	border: border-color:black;
+	position:absolute;
+	top:40px;
+	width:40px;
+	height:125px;
+	color: silver;
+	cursor: hand;
+	z-index:99;
+	background='url(images/shade.png)';
+}
+#mylogo{
+	border: thin;
+	position:absolute;
+	top:10px;
+	width:130px;
+	height:25px;
+	color: silver;
+	cursor: hand;
+}
+#error 
+{
+	position:absolute;
+	visibility:visible;
+	text-align:center;
+	z-index:99;
+	width:100%;
+	top: 45px;
+	left:5px; 
+	height:39px;
+	color:grey; 
+}
+#pagingbar {
+	position:absolute; 
+	left:26px; 
+	top:110px; 
+	width:80px; 
+	height:16px; 
+	z-index:2; 
+	border: 1px none #000000;
+	color: silver;  
+	cursor: hand;
+	font-size:  12px;
+	font-family:  Calibri;
+	font-weight: bold;
+	
+}

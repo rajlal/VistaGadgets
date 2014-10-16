@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>- ComicStrips -</name>
+  <namespace>Innovate.Gadgets</namespace>
+  <version>1.0</version>
+  <author name="Rajesh Lal">
+    <logo src="images/logo.png" />
+    <info url="www.innovatewithgadgets.com" />
+  </author>
+  <copyright>Copyright&#169; 2008</copyright>
+  <description>Display daily comicstrips of Dilbert, Garfield, Savage chicken, Calvin and Hobbes, userfriendly, xkcd and benson comics</description>
+  <icons>
+    <icon width="70" height="80" src="images/icon.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="gadget.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="images/drag.png"/>
+    </host>
+  </hosts>
+</gadget>

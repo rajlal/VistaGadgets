@@ -1,0 +1,9 @@
+﻿body
+  {
+	font-family: Calibri;
+	width:500px;
+	height:620px;
+	margin:0px;
+	padding:0px;
+    overflow: auto;
+  }

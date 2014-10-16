@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>- PopFly Demo -</name>
+  <namespace><!--_locComment_text="{Locked}"-->microsoft.windows</namespace>
+  <version><!--_locComment_text="{Locked}"-->1.0.0.0</version>
+  <author name="Rajesh Lal">
+      <info url="http://www.popfly.com" text="http://www.popfly.com" />
+  </author>
+  <icons>
+    <icon height="64" width="64" src="springfield.png" />
+  </icons>
+  <description>A gadget created with Microsoft Popfly.</description>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="gadget.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="0.3" />
+    </host>
+  </hosts>
+</gadget>

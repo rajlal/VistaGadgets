@@ -1,0 +1,133 @@
+﻿<!--
+////////////////////////////////////////////
+// Code and content Copyright © 2008 
+// Author Rajesh Lal
+// Email: connectrajesh@hotmail.com 
+// Should not be distributed for commercial use without prior permission from the author
+////////////////////////////////////////////
+// Add your gadget to http://innovatewithgadget.com to share with everyone
+// Keep the 'aboutgadget' DIV in the Settings page, if you wish to distribute personal gadget
+// Check latest gadgets shared by other users at at www.innovatewithgadgets.com
+////////////////////////////////////////////
+-->
+
+<html>
+<head>
+    <title>Setting</title>
+   <script language="javascript" type="text/javascript">
+
+System.Gadget.onSettingsClosing = settingsClosing;
+
+function settingsClosing(event)
+{
+    if(event.closeAction == event.Action.commit)
+    {
+        SaveSettings();
+    }
+    else if (event.closeAction == event.Action.cancel)
+    {
+    }
+}
+function SaveSettings() 
+{
+	            System.Gadget.Settings.write("feedChanged",true);
+	            System.Gadget.Settings.write("FeedURL", document.getElementById('TextBoxFeedURL').value );
+	            System.Gadget.Settings.write("FlyoutWidth",document.getElementById('txtWidth').value );
+	            System.Gadget.Settings.write("FlyoutHeight",document.getElementById('txtHeight').value );
+}
+function LoadSettings() {
+
+    if  (System.Gadget.Settings.read("FeedURL") == "")
+	    {
+	     document.getElementById('TextBoxFeedURL').value = "http://innovatewithgadgets.com/atom.xml";
+	     
+	    }
+	    else
+	    {
+	      document.getElementById('TextBoxFeedURL').value = System.Gadget.Settings.read("FeedURL");
+	    }
+	    document.getElementById('txtWidth').value = System.Gadget.Settings.read("FlyoutWidth");
+	    document.getElementById('txtHeight').value = System.Gadget.Settings.read("FlyoutHeight");
+	     
+	     
+	    
+
+}
+</script>
+   <style>
+
+body {
+    margin: 0;
+    padding:0;
+    width: 275px;
+    height: 220px;
+    font-family: Segoe UI, Arial;
+    color: #D4F4FF;
+    color: #333333;
+    cursor:default;
+    background-color:#ffffff;
+    overflow:hidden;
+}
+
+a {
+	color:#0066cc;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+h1, h2, h3 {
+	margin:5px 0px 3px 5px;
+    padding:0;
+	color:#003399;
+	font-weight:normal;
+}
+
+h2 {
+	font-size:15px;
+	margin-bottom:8px;
+	margin-top:0px;
+}
+
+h3 {
+	font-size:12px;
+}
+h4 {
+	font-size:8px;
+}
+h3 span {
+	background-color:White;
+	padding-right:10px;
+}
+.OuterWorld {
+	border:solid 0px #999999; border-top:none;
+    background-color:#ffffff;
+	padding:5px 5px 0px 10px;
+	position:relative;
+	overflow:hidden;
+	height:160px;
+}
+</style>
+</head>
+
+<body  onload="LoadSettings()" >
+<div class="OuterWorld">
+        <div align="center">
+		<img src ="images/about.jpg" alt ="About MyBlog"/>
+		</div>
+</div>	
+
+<div align="left">
+Feed:<input id="TextBoxFeedURL" type="text" value="http://innovatewithgadgets.com/atom.xml" style="width: 150px; font-family: verdana; font-size: x-small; "/>W: <input id="txtWidth" type="text" value="600" style="width: 20px; font-family: verdana; font-size: x-small; "/>H: <input id="txtHeight" type="text" value="600" style="width: 20px; font-family: verdana; font-size: x-small; "/>
+		</div>
+	<br />	
+<div><table border=0 cellpadding =0 cellspacing=0 width=100%><tr><td><font face = "verdana" size="1">Innovate: <a title ="Go to innovatewithgadgets.com website" href="http://www.innovatewithgadgets.com">Web</a></font>&nbsp;</td>
+<td align =right>
+<font face = "verdana" size="1">Email: <a title ="Email: Author"href="mailto:connectrajesh@hotmail.com">Author</a></font>
+&nbsp;</td><td align =right>
+<font face = "verdana" size="1"><a title ="Get the Gadget book (May 2008)" href="http://www.innovatewithgadgets.com/2008/04/creating-vista-gadget-coming-may-2008.html?MyBlog">Gadget Book</a></font>
+</td></tr></table>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!--
+////////////////////////////////////////////
+// Code and content Copyright © 2008 
+// Author Rajesh Lal
+// Email: connectrajesh@hotmail.com 
+// Should not be distributed for commercial use without prior permission from the author
+////////////////////////////////////////////
+// Add your gadget to http://innovatewithgadget.com to share with everyone
+// Keep the 'aboutgadget' DIV in the Settings page, if you wish to distribute personal gadget
+// Check latest gadgets shared by other users at at www.innovatewithgadgets.com
+////////////////////////////////////////////
+-->
+<html>
+<head>
+<title>My Blog Gadget</title>
+<link rel="stylesheet" type="text/css" href="style/gadget.css" />
+<script src="code/gadget.js" type="text/javascript"></script>
+<script src="code/Utility.js" type="text/javascript"></script>
+
+</head>
+<body onmouseover="" onmouseout="" onload="Setup()" >
+<div id="blogtitletable"  onmouseover="ShowArrowTitle();" onmouseout="HideArrowTitle();">
+  <table width="100%" height="20"  border="0" cellpadding="3" cellspacing="2">
+    <tr align="center" valign="middle">
+      <td width="1"align="right"></td>
+      <td width="4" align = right class="arrowl" onclick="ChangeFeed(-1);" align="right"><div id="larrowtitle" style="visibility:hidden;"  title="previous statistics"><b>&lsaquo;</b></div></td>
+      <td class="subtitle" id="blogtitle" valign ="middle" ondblclick ="RefreshData();">SiteMeter</td>
+      <td width="4"  align = left class="arrow" onclick="ChangeFeed(+1);" align="left"><div id="rarrowtitle" style="visibility:hidden;"  title="next statistics"><b>&rsaquo;</b></div></td>
+      <td width="1"align="right"></td>
+     </tr>
+  </table>
+</div>
+<div id="content">
+  <table id="contenttable" width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
+
+    <tr>
+      <td class="title" valign="middle"  onmouseover="this.style.background='url(images/shadow.png)';" onmouseout="this.style.background='none';"><div id="cell0" title=""></div></td>
+    </tr>
+    <tr>
+      <td class="title" valign="middle"  onmouseover="this.style.background='url(images/shadow.png)';" onmouseout="this.style.background='none';"><div id="cell1" title="Site statistics"></div></td>
+    </tr>
+    <tr>
+      <td class="title" valign="middle"  onmouseover="this.style.background='url(images/shadow.png)';" onmouseout="this.style.background='none';"><div id="cell2" ></div></td>
+    </tr>
+    <tr>
+      <td class="title" valign="middle"  onmouseover="this.style.background='url(images/shadow.png)';" onmouseout="this.style.background='none';"><div id="cell3" ></div></td>
+    </tr>
+     <tr>
+      <td class="title" valign="middle"  onmouseover="this.style.background='url(images/shadow.png)';" onmouseout="this.style.background='none';"><div id="cell4" title="Detail statistics at sitemeter.com"></div></td>
+    </tr>
+  </table>
+</div>
+
+<a href="http://www.sitemeter.com" title ="Go to www.sitemeter.com" >
+<div id="pagingbar" title="" onmouseover="" onmouseout="">
+  <table width="100%" height="100%"  border="0" cellpadding="2" cellspacing="0">
+    <tr align="center" valign="middle">
+      <td width="12" id="leftarrow" class="arrow" align="right" ><div id="larrow" style="visibility:hidden;" title=""><b></b></div></td>
+      <td width="44" class="sub" id="pageNum" align="center" ></td>
+      <td width="12" id="rightarrow" class="arrow" align="left" ><div id="rarrow" style="visibility:visible;" title="Go to www.sitemeter.com"><b></b></div></td>
+    </tr>
+  </table>
+  
+</div></a>
+
+<div id="loading" title ="Connecting...wait"></div>
+<div id="error"></div>
+<a href="http://www.innovatewithgadgets.com" title ="Go to blog website" >
+<div id="mylogo" title ="Go to Gadgets Blog Website">
+</div><div id='sitesummary' style="visibility:hidden;" ></div>
+</a>
+</body>
+</html>

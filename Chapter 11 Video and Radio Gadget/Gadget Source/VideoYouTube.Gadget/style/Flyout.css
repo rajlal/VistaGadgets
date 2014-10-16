@@ -1,0 +1,23 @@
+﻿body
+	{
+		font-family: Segoe UI, Tahoma, Sans-Serif;
+		width:432px;
+		height:385px;
+		margin:0px;
+		padding:0px;
+		bg-color:gray;
+	}
+	#mytext {
+	position:absolute; 
+	left:0px; 
+	top:241px; 
+	width:0px; 
+	height:0px; 
+	font-size:  10px;
+	background-color: black;
+	font-family:  Verdana;
+	color: gray;
+	z-index:1;
+	overflow: hidden;
+	padding:5px;
+}

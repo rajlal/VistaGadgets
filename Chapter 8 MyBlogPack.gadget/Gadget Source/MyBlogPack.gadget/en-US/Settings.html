@@ -1,0 +1,52 @@
+﻿<!--
+////////////////////////////////////////////
+// Code and content Copyright © 2008 
+// Author Rajesh Lal
+// Email: connectrajesh@hotmail.com 
+// Should not be distributed for commercial use without prior permission from the author
+////////////////////////////////////////////
+// Add your gadget to http://innovatewithgadget.com to share with everyone
+// Keep the 'aboutgadget' DIV in the Settings page, if you wish to distribute personal gadget
+// Check latest gadgets shared by other users at at www.innovatewithgadgets.com
+////////////////////////////////////////////
+-->
+<html>
+<head>
+    <title>Setting</title>
+    <script src="code/settings.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style/settings.css" />
+
+</head>
+
+<body  onload="LoadSettings()" >
+<div class="OuterWorld">
+        <div align="center">
+		<img src ="images/about.jpg" alt ="About MyBlog"/></div>
+</div>	
+<div align="left">
+<div id="rssSelect" ><select id="rssFeed_SelectId" name="rssTheme_SelectName" onChange="javascript:settextboxes(this);"
+ style="width: 275px; font-family: verdana; font-size: x-small; ">
+			<option value="http://innovatewithgadgets.com/atom.xml">Select</option>
+		</select>
+	</div>
+	<div id = "errorid" style="height:10px; font-family: verdana; font-size: x-small; " ></div>
+<div class="addremovefeed">
+<font face = "verdana" size="1"><input id="TextBoxFeedURL" type="text" value="http://innovatewithgadgets.com/atom.xml" style="width:260px; font-family: verdana; font-size: x-small; "/><br />
+Width: <input id="txtWidth" type="text" value="600" style="width: 30px; font-family: verdana; font-size: x-small; "/>
+Height: <input id="txtHeight" type="text" value="600" style="width: 30px; font-family: verdana; font-size: x-small; "/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt = "reset feed" id = 'resetfeed' style="cursor:hand;visibility:hidden; " onclick="resetFeed();" src ="../images/reset.gif" />
+<img alt = "update feed" id = 'updatefeed' style="cursor:hand;visibility:hidden; " onclick="updateFeed();" src ="../images/save.gif" />
+<img alt = "remove feed" id = 'removefeed' style="cursor:hand;visibility:hidden;" onclick="removeFeed();" src ="../images/feedremove.gif" />
+<img alt = "add feed" id = 'addfeed' style="cursor:hand;"  onclick="addFeed();" src ="../images/feedadd.gif" />
+</div>
+</font>&nbsp;<input id="minime" type="checkbox" /> mini-me</div>
+<div><table><tr><td><font face = "verdana" size="1">Innovate: <a title ="Go to innovatewithgadgets.com website" href="http://www.innovatewithgadgets.com">Web</a></font>&nbsp;</td>
+<td align =right>
+<font face = "verdana" size="1">Email: <a title ="Email: Author"href="mailto:connectrajesh@hotmail.com">Author</a></font>
+&nbsp;</td><td align =right>
+<font face = "verdana" size="1"><a title ="Get the Gadget book (May 2008)" href="http://www.innovatewithgadgets.com/2008/04/creating-vista-gadget-coming-may-2008.html?MyBlogPack">Gadget Book</a></font>
+</td></tr></table>
+</div>
+</body>
+</html>

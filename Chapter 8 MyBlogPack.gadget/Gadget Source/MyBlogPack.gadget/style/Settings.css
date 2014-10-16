@@ -1,0 +1,78 @@
+﻿body {
+    margin: 0;
+    padding:0;
+    width: 275px;
+    height: 220px;
+    font-family: Segoe UI, Arial;
+    color: #D4F4FF;
+    color: #333333;
+    cursor:default;
+    background-color:#ffffff;
+    overflow:hidden;
+}
+
+a {
+	color:#0066cc;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+h1, h2, h3 {
+	margin:5px 0px 3px 5px;
+    padding:0;
+	color:#003399;
+	font-weight:normal;
+}
+
+h2 {
+	font-size:15px;
+	margin-bottom:8px;
+	margin-top:0px;
+}
+
+h3 {
+	font-size:12px;
+}
+h4 {
+	font-size:8px;
+}
+h3 span {
+	background-color:White;
+	padding-right:10px;
+}
+.OuterWorld {
+	border:solid 0px #999999; border-top:none;
+    background-color:#ffffff;
+	padding:5px 5px 0px 10px;
+	position:relative;
+	overflow:hidden;
+	height:90px;
+}
+left
+{
+	font-family: verdana; font-size: x-small; 
+}
+DIV.errorid
+{
+	font-family: verdana; font-size: x-small; 
+}
+DIV.addremovefeed
+{
+	border-style:dotted ; 
+	BORDER-RIGHT: silver 1px;
+    BORDER-LEFT: silver 1px;
+    BORDER-TOP: silver 1px;
+    BORDER-BOTTOM: silver 1px;
+    
+    PADDING-BOTTOM: 2px;
+    PADDING-LEFT: 2px;
+    PADDING-RIGHT: 2px;
+    PADDING-TOP: 2px;
+    
+    COLOR: #000000;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: medium;
+    font-family: Segoe UI, Arial;
+}
